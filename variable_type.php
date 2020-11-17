@@ -12,7 +12,7 @@
 
     <?php 
     $name = "sebastien"; 
-    <?php echo  $_GET['name']; ?>
+    echo "Hi! my name is ". $name; 
     ?>
 
 </body>
