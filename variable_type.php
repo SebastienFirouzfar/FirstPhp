@@ -12,7 +12,26 @@
 
     <?php 
     $name = "sebastien"; 
-    echo "Hi! my name is ". $name; 
+    $age = 27; 
+    $colorEyes = "black"
+    ?>
+
+    <?php $nameFamilly = array("Sebastien", "Aidin", "Alice");?>
+
+    <p>Hi! My name is <?php echo "$name"?></p>
+    <p>I am <?php echo "$age" ?> </p>
+    <p>My eyes are <?php echo $colorEyes ?> </p>
+    <p>La première personne de la famille est <?php echo "$nameFamilly[1]"?></p>
+
+    <?php 
+        $isTrue = "is true";
+        $isFalse = "is false";
+        $hungry = false; 
+        if($hungry == true){
+            echo $isTrue;
+        }else{
+            echo $isFalse;
+        }
     ?>
 
 </body>
