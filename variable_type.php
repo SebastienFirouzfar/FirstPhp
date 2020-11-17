@@ -32,7 +32,37 @@
         }else{
             echo $isFalse;
         }
-    ?>
+
+        
+
+        $room_is_filthy = true;
+    if($room_is_filthy == true){
+	    echo "Yuk, Room is dirty : let's clean it up !";
+	    
+	    echo "<br>Room is now clean!";
+	    $room_is_filthy = false;
+    } else {
+	echo "<br>Nothing to do, room is neat.";
+    }
+
+
+
+
+
+    $possible_states = [""];
+
+// When testing, change the index value to navigate to the possible array values
+$room_filthiness = $possible_states[0]; 
+
+    if( write_your_condition_here ){
+	    echo "Yuk, Room is Disgusting! Let's clean it up !";
+    } else if( write_your_condition_here ){
+	    echo "Yuk, Room is dirty : let's clean it up !";
+    // ...
+    } else {
+	echo "<br>Nothing to do, room is neat.";
+    }
+?>
 
 </body>
 
