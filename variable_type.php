@@ -54,7 +54,7 @@
 // When testing, change the index value to navigate to the possible array values
 $room_filthiness = $possible_states[0]; 
 
-//chage here test
+
     if( write_your_condition_here ){
 	    echo "Yuk, Room is Disgusting! Let's clean it up !";
     } else if( write_your_condition_here ){
