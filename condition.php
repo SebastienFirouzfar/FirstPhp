@@ -11,6 +11,7 @@
    $possible_states = [" danger pour la santé", "sale", "propre", "immaculée"];
 
    // When testing, change the index value to navigate to the possible array values
+   //test
    $room_filthiness = $possible_states[0];
    
        if($room_filthiness == $possible_states[0] || $room_filthiness == $possible_states[1]){
