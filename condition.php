@@ -124,10 +124,10 @@ if (isset($_GET['language'])){
 	<label for="soccers">Give me your information </label>
     
     <label for="yes">Name </label>
-    <input type="text" name="soccers" value = "namePlayers" >
+    <input type="text" name="soccers" >
 
     <label for="">Age</label>
-    <input type="text" name="age" value = "age" >
+    <input type="text" name="ageplayer"  >
     
     <label for="">Gender</label>
      <input type="radio"  name="gender" value = "femelle" > femalle
@@ -136,16 +136,54 @@ if (isset($_GET['language'])){
 </form>
 
 <?php 
-    if(isset($_GET['soccers'])){
+    if(isset($_GET['soccers']) && isset($_GET['ageplayer'])){
+        /*
+        exo 5
         if($_GET['age'] > 21 && $_GET['age'] < 40 && $_GET['gender'] == "femelle" ){
             echo "welcome to the team !"; 
         }else{
             echo "Sorry you don't fit the criteria";
         }
+             */
+
+    //exercice 6 
+    $accepPlayer = ($_GET['ageplayer'] > 21 && $_GET['ageplayer'] < 40 && $_GET['gender'] == "femelle" ?  "welcome to the team" :  "Sorry you don't fit the criteria"); 
+        echo "$accepPlayer"; 
+}
+?>
+
+
+<!--Exercice 7-->
+<form method="get" action="">
+    <label for="coteEleve">Donnez moi la cote de l'eleve </label>
+    <input type="text" name="coteEleve" >
+    <input type="submit" name="submit" value="Cliquer ici">
+</form>
+
+<?php 
+    if(isset($_GET['coteEleve'])){
+        if($_GET['coteEleve'] <= 4){
+            echo "This work is really bad. What a dumb kid! "; 
+        }elseif ($_GET['coteEleve'] >= 5 && $_GET['coteEleve'] <= 9) {
+            echo "This is not sufficient. More studying is required."; 
+        }elseif ($_GET['coteEleve'] == 10) {
+            echo "barely enough!"; 
+        }elseif ($_GET['coteEleve'] > 10 && $_GET['coteEleve'] <= 14) {
+            echo  "Not bad!"; 
+        }elseif ($_GET['coteEleve'] > 14 && $_GET['coteEleve'] <= 18){
+            echo  "Bravo, bravissimo!"; 
+        }elseif ($_GET['coteEleve'] > 18 && $_GET['coteEleve'] <= 20) {
+            echo  "Too good to be true : confront the cheater!";
+        }else {
+            echo  "Votre cote doivent être coté entre 0 et 20"; 
+        }
     }
-  
+
+
+
 
 ?>
+
 
 
 </body>
