@@ -179,10 +179,6 @@ if (isset($_GET['language'])){
             echo  "Votre cote doivent être coté entre 0 et 20"; 
         }
     }
-
-
-
-
 ?>
 
 
