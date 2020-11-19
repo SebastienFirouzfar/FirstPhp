@@ -28,30 +28,41 @@ echo $person['function'];
 
 <!--Exo1-->
 <?php 
-
+//tableau me
 $me = array(
     'firstname' => 'sebastien', 
     "lastname" => "firouzfar",
     "favoriteMovie" => array("spiderman", "conjuring", "matrix"),
-    "hobbies" => array("Play football", "travel")
+    "hobbies" => array("Play football", "travel"), 
+
+     //tableau mother
+    $mother = array(
+        'firstname' => 'Alicia', 
+        "lastname" => "Van dame",
+        "hobbies" => array("make up", "shopping", "voyager")  
+    )
 );
 
 
+
+
+
+
 echo '<pre>';
 print_r($me);
 echo '</pre>';
-
-$mother = array(
-    'firstname' => 'Jacline', 
-    "lastname" => "moms", 
-); 
-
+echo '</br>'; 
 $me['hobbies'] = $mother; 
+
+//count to mother
+//demande de l'aide pour le tab me
+var_dump($mother['hobbies']) ;
+$x = count($mother['hobbies']); 
+echo $x; 
+
+var_dump($me['hobbies']) ;
+  
+
+
  
-
-echo '<pre>';
-print_r($me);
-echo '</pre>';
-
-
 ?>
