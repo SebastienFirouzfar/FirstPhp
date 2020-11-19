@@ -161,6 +161,7 @@ if (isset($_GET['language'])){
 </form>
 
 <?php 
+    // tester exo
     if(isset($_GET['coteEleve'])){
         if($_GET['coteEleve'] <= 4){
             echo "This work is really bad. What a dumb kid! "; 
