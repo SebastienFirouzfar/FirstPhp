@@ -1,3 +1,4 @@
+<!--BEGIN THE EXAMPLE-->
 <?php 
 
 $countries = array('Belgium', 'France' , 'Germany', 'Netherlands', 'Ukraine');
@@ -24,9 +25,11 @@ print_r($countries);
 
 $person['function'] = 'Junior Web Developer';
 echo $person['function'];
-?>
 
-<!--Exo1-->
+?>
+<!--END THE EXAMPLE-->
+
+<!--EXO1-->
 <?php 
 //tableau me
 $me = array(
@@ -44,25 +47,37 @@ $me = array(
 );
 
 
-
-
-
-
 echo '<pre>';
 print_r($me);
 echo '</pre>';
 echo '</br>'; 
-$me['hobbies'] = $mother; 
+
+//add the new hobies
+array_push($me['hobbies'], ' taxidermie '); 
+
+//replace the last name in the array
+$changelastname = array_replace($mother, ['lastname' => 'Durant']); 
+echo '<pre>';
+print_r($changelastname); 
+echo '<pre>'; 
+
 
 //count to mother
-//demande de l'aide pour le tab me
-var_dump($mother['hobbies']) ;
+//var_dump($mother['hobbies']) ;
+echo "Loisir mother "; 
 $x = count($mother['hobbies']); 
 echo $x; 
+echo "</br>"; 
+//var_dump($me['hobbies']) ;
+echo "Loisir me "; 
+$y = count($me['hobbies']); 
+echo $y; 
+$total = $x + $y; 
+echo "</br>"; 
+echo "Total de tout leur loisir $total "; 
 
-var_dump($me['hobbies']) ;
-  
+
+//Create a new array from 2 others (or more)
 
 
- 
 ?>
