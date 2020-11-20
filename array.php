@@ -88,11 +88,18 @@ $me = array(
     "hobbies" => array("Play football", "travel"), 
 );
 
-$soulmate = array( ... );
+$soulmate = array(
+    'firstname' => 'Ali', 
+    "lastname" => "Voleur",
+    "favoriteMovie" => array("spiderman", "conjuring", "matrix"),
+    "hobbies" => array("Play football", "travel"), 
+);
 
 // perform array operation
 $possible_hobbies_via_intersection = array_...;
 $possible_hobbies_via_merge = array_...;
+
+
 
 echo '<pre>';
 print_r($possible_hobbies_via_intersection);
