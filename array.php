@@ -78,9 +78,6 @@ echo "Total de tout leur loisir $total ";
 
 
 //Create a new array from 2 others (or more)
-
-
-
 $me = array(
     'firstname' => 'sebastien', 
     "lastname" => "firouzfar",
