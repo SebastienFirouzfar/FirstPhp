@@ -39,7 +39,7 @@ function sum($number1, $number2){
     }
 }
 
-//abbreviate
+//abbreviate exo fin
 $test = "Institut Paul Lambin"; 
 function abbreviate($test){
     $abbreviation = "";
@@ -50,6 +50,7 @@ function abbreviate($test){
    return $abbreviation; 
 }
 
+
 ?>
 
 <p> <?php echo capitalLetters($letter) ?> </p>
@@ -57,3 +58,5 @@ function abbreviate($test){
 <p> <?php echo timeBelgium($heure, $minutes, $secondes); ?> </p>
 <p> <?php echo sum(10, 15) ?> </p>
 <p> <?php echo abbreviate($test) ?> </p>
+
+
