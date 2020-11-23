@@ -11,6 +11,8 @@ function capitalLetters($letter){
     return ucwords($letter); 
 }
 
+
+
 //years
 $annee = 2020;
 function years($annee){
@@ -39,7 +41,7 @@ function sum($number1, $number2){
     }
 }
 
-//abbreviate 
+//abbreviate test
 $test = "Institut Paul Lambin"; 
 function abbreviate($test){
     $abbreviation = "";
