@@ -39,7 +39,7 @@ function sum($number1, $number2){
     }
 }
 
-//abbreviate exo fin
+//abbreviate 
 $test = "Institut Paul Lambin"; 
 function abbreviate($test){
     $abbreviation = "";
