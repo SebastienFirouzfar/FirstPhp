@@ -53,6 +53,17 @@ function abbreviate($test){
 }
 
 
+
+//replace letters
+$tableauReplace = array("caecotrophie", "chaenichthys","microsphaera", "sphaerotheca");
+$remplace = "";
+print_r($tableauReplace); 
+    foreach($tableauReplace as $keyReplace => $valueLetterReplace){
+            $remplace = str_replace("ae", "æ" ,$tableauReplace);
+        
+    }
+    print_r($remplace);  
+
 ?>
 
 <p> <?php echo capitalLetters($letter) ?> </p>
