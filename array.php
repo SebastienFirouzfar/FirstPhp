@@ -93,15 +93,15 @@ $soulmate = array(
 );
 
 // perform array operation
-$possible_hobbies_via_intersection = array_...;
-$possible_hobbies_via_merge = array_...;
+//$possible_hobbies_via_intersection = array_...;
+//$possible_hobbies_via_merge = array_...;
 
 
 
-echo '<pre>';
-print_r($possible_hobbies_via_intersection);
-print_r($possible_hobbies_via_merge);
-echo '</pre>';
+//echo '<pre>';
+//print_r($possible_hobbies_via_intersection);
+//print_r($possible_hobbies_via_merge);
+//echo '</pre>';
 
 
 

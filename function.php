@@ -59,12 +59,23 @@ function remplaceLetters(){
 $tableauReplace = array("caecotrophie", "chaenichthys","microsphaera", "sphaerotheca");
 $remplace = "";
 print_r($tableauReplace); 
-    foreach($tableauReplace as $keyReplace => $valueLetterReplace){
-            $remplace = str_replace("ae", "æ" ,$tableauReplace);  
-    }
+    $remplace = str_replace("ae", "æ" ,$tableauReplace);  
     return $remplace;  
 }
 
+//remplace inverse
+function remplaceInverse(){
+$tab = array("cæcotrophie", "chænichthys", "microsphæra", "sphærotheca"); 
+$remplaceInverse = ""; 
+    print_r($tab); 
+    $remplaceInverse = str_replace("æ", "ae", $tab); 
+    return $remplaceInverse; 
+}
+
+//message error
+function feedback($message, $cssClass){
+    echo "<div class=$cssClass>$cssClass :   $message </div>"; 
+}
 
 
 ?>
@@ -75,5 +86,7 @@ print_r($tableauReplace);
 <p> <?php echo sum(10, 15) ?> </p>
 <p> <?php echo abbreviate($test) ?> </p>
 <p> <?php print_r(remplaceLetters()) ?> </p>
-
+</br>
+<p> <?php print_r(remplaceInverse()) ?> </p>
+<p> <?php echo feedback("esays", "pas valide") ?> </p>
 
