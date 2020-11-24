@@ -55,14 +55,17 @@ function abbreviate($test){
 
 
 //replace letters
+function remplaceLetters(){
 $tableauReplace = array("caecotrophie", "chaenichthys","microsphaera", "sphaerotheca");
 $remplace = "";
 print_r($tableauReplace); 
     foreach($tableauReplace as $keyReplace => $valueLetterReplace){
-            $remplace = str_replace("ae", "æ" ,$tableauReplace);
-        
+            $remplace = str_replace("ae", "æ" ,$tableauReplace);  
     }
-    print_r($remplace);  
+    return $remplace;  
+}
+
+
 
 ?>
 
@@ -71,5 +74,6 @@ print_r($tableauReplace);
 <p> <?php echo timeBelgium($heure, $minutes, $secondes); ?> </p>
 <p> <?php echo sum(10, 15) ?> </p>
 <p> <?php echo abbreviate($test) ?> </p>
+<p> <?php print_r(remplaceLetters()) ?> </p>
 
 
