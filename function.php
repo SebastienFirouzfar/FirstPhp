@@ -88,5 +88,6 @@ function feedback($message, $cssClass){
 <p> <?php print_r(remplaceLetters()) ?> </p>
 </br>
 <p> <?php print_r(remplaceInverse()) ?> </p>
+</br>
 <p> <?php echo feedback("esays", "pas valide") ?> </p>
 
