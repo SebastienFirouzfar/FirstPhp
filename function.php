@@ -78,6 +78,23 @@ function feedback($message, $cssClass){
 }
 
 
+//word generate
+function generateRandomString($length) {
+    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /* Uncomment below to include symbols /
+    / $includechars .= "[{(!@#$%^/&*+;?:)}]"; */
+    $charLength = strlen($chars); //compter la longueur de chars
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $chars [rand(0, $charLength - 1)]; // - 1 pour aller à la lettre Z
+    }
+    return $randomString;
+}
+
+$lenght = 12; # Set result string lenght / Définir la longueur de la chaîne de résultats qui sera afficher
+$result = generateRandomString($lenght);
+echo $result; 
+
 ?>
 
 <p> <?php echo capitalLetters($letter) ?> </p>
@@ -90,4 +107,7 @@ function feedback($message, $cssClass){
 <p> <?php print_r(remplaceInverse()) ?> </p>
 </br>
 <p> <?php echo feedback("esays", "pas valide") ?> </p>
+
+
+
 
